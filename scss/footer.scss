@@ -1,0 +1,113 @@
+$primary-font: 'Roboto',
+sans-serif;
+$secondary-font: 'Nunito Sans',
+sans-serif;
+$primary-font-size: 20px;
+$secondary-font-size: 16px;
+$sub-heading-size: 55px;
+$primary-color: #284854;
+$secondary-color: #60C1BD;
+$tertiary-color: #8BC441;
+
+.footer {
+    padding: 0 122px;
+    display: grid;
+    justify-content: center;
+
+
+    &__links {
+        max-width: 1196px;
+        max-height: 290px;
+        padding: 78px 30px 0;
+        list-style: none;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+
+    }
+
+    &__img {
+        padding-top: 20px;
+        width: 230px;
+
+    }
+
+    &__menu-wrap {
+        width: 180px;
+        height: 154px;
+        margin-right: 138px;
+    }
+
+    &__menu-name {
+        font-family: $secondary-font;
+        font-size: 13px;
+        line-height: 1.4;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: $primary-color;
+        margin-bottom: 25px;
+    }
+
+    &__list {
+        list-style: none;
+    }
+
+    &__list-item-link,
+    &__contact-info-link {
+        font-family: $secondary-font;
+        color: $secondary-color;
+        font-size: 14px;
+        text-decoration: none;
+        line-height: 1.2;
+        cursor: pointer;
+
+        &:hover {
+            transition: all 0.5s ease-in-out;
+            color: $primary-color;
+        }
+    }
+
+    &__address {
+        margin-bottom: 29px;
+    }
+
+    &__contact {
+        margin-left: 43px;
+    }
+
+    &__contact-info {
+        font-family: $secondary-font;
+        color: $secondary-color;
+        font-size: 14px;
+        text-decoration: none;
+        width: 170px;
+        line-height: 1.5;
+    }
+
+    &__list-item {
+        margin-bottom: 18px;
+
+        &:hover {
+            transition: all 0.5s ease-in-out;
+            transform: translateX(5px);
+        }
+    }
+
+    &__nav {
+        padding: 0 30px 44px;
+    }
+
+    &__copyright {
+        font-family: $secondary-font;
+        font-size: 13px;
+        line-height: 1.4;
+        color: $primary-color;
+    }
+
+    &__nav-list {
+        max-width: 508px;
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 33px;
+    }
+}

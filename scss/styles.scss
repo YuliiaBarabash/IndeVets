@@ -1,0 +1,26 @@
+@use "./header.scss";
+@use "./main.scss";
+@use "./footer.scss";
+
+$primary-font: 'Roboto', sans-serif;
+$secondary-font: 'Nunito Sans', sans-serif;
+$primary-font-size: 20px;
+$secondary-font-size: 15px;
+$sub-heading-size: 55px;
+$primary-color: #284854;
+$secondary-color: #60C1BD;
+$tertiary-color: #8BC441;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.bg-blue {
+    width: auto;
+    height: 799px;
+    background-color: $primary-color;
+    padding-top: 22px;
+}
+
