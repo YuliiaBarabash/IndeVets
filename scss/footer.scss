@@ -23,18 +23,29 @@ $tertiary-color: #8BC441;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
 
+        @media screen and (max-width: 1024px) {
+            max-width: 900px;
+            margin-bottom: 20px;
+        }
     }
 
     &__img {
         padding-top: 20px;
         width: 230px;
 
+        @media screen and (max-width: 1024px) {
+            width: 130px;
+        }
     }
 
     &__menu-wrap {
         width: 180px;
         height: 154px;
         margin-right: 138px;
+
+        @media screen and (max-width: 1024px) {
+            margin-right: 50px;
+        }
     }
 
     &__menu-name {
@@ -45,6 +56,10 @@ $tertiary-color: #8BC441;
         text-transform: uppercase;
         color: $primary-color;
         margin-bottom: 25px;
+
+        @media screen and (max-width: 1024px) {
+            
+        }
     }
 
     &__list {
@@ -109,5 +124,9 @@ $tertiary-color: #8BC441;
         display: flex;
         justify-content: space-between;
         margin-bottom: 33px;
+    }
+
+    @media screen and (max-width: 1024px) {
+        padding: 0 30px;
     }
 }

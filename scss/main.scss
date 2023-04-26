@@ -10,29 +10,47 @@ $secondary-color: #60C1BD;
 $tertiary-color: #8BC441;
 
 .section {
-    max-width: 1230px;
-    margin: 0 auto;
+    max-width: 100%;
     display: grid;
+    justify-self: center;
     grid-template-columns: 1fr 1fr;
-
 
     &_top-margined {
         max-width: 1200px;
         margin-top: 134px;
         padding: 0 70px;
         height: 391px;
+        display: grid;
+        justify-self: center;
         justify-items: end;
+
+        @media screen and (max-width: 1024px) {
+            gap: 20px;
+            grid-template-columns: 2fr 1fr;
+            margin-top: 70px;
+
+        }
     }
 
     &_centered {
         justify-items: center;
         gap: 100px;
+
+        @media screen and (max-width: 1024px) {
+            gap: 30px;
+            grid-template-columns: 1fr 1fr;
+            padding-top: 70px;
+        }
     }
 
     &_main {
         grid-template-columns: 1fr;
         justify-items: center;
         padding-top: 289px;
+
+        @media screen and (max-width: 1024px) {
+            padding: 180px 0;
+        }
     }
 
     &__heading {
@@ -41,6 +59,10 @@ $tertiary-color: #8BC441;
         font-weight: 400;
         font-size: 85px;
         line-height: 1.2;
+
+        @media screen and (max-width: 1024px) {
+            font-size: 65px;
+        }
     }
 
     &__main-text {
@@ -48,13 +70,31 @@ $tertiary-color: #8BC441;
         font-size: $primary-font-size;
         line-height: 1.4;
         margin-top: 45px;
-        color: #fff;
+        color: #F4F6F0;
+
+        @media screen and (max-width: 1024px) {
+            font-size: 18px;
+            width: 450px;
+            font-weight: 200;
+        }
     }
 
     &__intro-img {
         margin-top: 26px;
         width: 320px;
-        height: 361px;
+        height: 330px;
+
+        @media screen and (max-width: 1024px) {
+            width: 265px;
+            height: 361px;
+        }
+    }
+
+    &__card-img {
+        @media screen and (max-width: 1024px) {
+            width: 85px;
+            height: 85px;
+        }
     }
 
     &__card {
@@ -63,10 +103,17 @@ $tertiary-color: #8BC441;
         background: #F4F6F0;
         border-radius: 4px;
         margin-top: 90px;
-        padding: 45px 0 30px 30px;
+        padding: 30px 0 30px 30px;
         display: grid;
         align-items: center;
         grid-template-columns: 1fr 2fr;
+
+        @media screen and (max-width: 1024px) {
+            padding: 20px 0 20px 20px;
+            width: 365px;
+            height: 155px;
+            gap: 5px;
+        }
     }
 
     &__card-description {
@@ -82,6 +129,10 @@ $tertiary-color: #8BC441;
         line-height: 1.2;
         font-weight: 400;
         color: $tertiary-color;
+
+        @media screen and (max-width: 1024px) {
+            font-size: 27px;
+        }
     }
 
     &__card-link {
@@ -95,6 +146,10 @@ $tertiary-color: #8BC441;
         &:hover {
             transition: all 0.5s ease-in-out;
             color: $primary-color;
+        }
+
+        @media screen and (max-width: 1024px) {
+            font-size: $secondary-font-size;
         }
     }
 
@@ -132,6 +187,10 @@ $tertiary-color: #8BC441;
             color: #fff;
             margin-bottom: 57px;
         }
+
+        @media screen and (max-width: 1024px) {
+            font-size: 45px;
+        }
     }
 
     &__links {
@@ -147,15 +206,32 @@ $tertiary-color: #8BC441;
         font-family: $secondary-font;
         line-height: 1.4;
         font-size: $primary-font-size;
+        outline: none;
 
         &:not(:last-of-type) {
             margin-right: 100px;
+
+            @media screen and (max-width: 1024px) {
+                margin-right: 55px;
+            }
         }
 
         &:hover {
             transition: all 0.5s ease-in-out;
             color: $primary-color;
         }
+
+        @media screen and (max-width: 1024px) {
+            font-size: 18px;
+        }
+    }
+
+    &__arrow-box {
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        right: 70px;
+        top: 150px;
     }
 
     &__paragraph {
@@ -168,11 +244,20 @@ $tertiary-color: #8BC441;
 
         &:first-of-type {
             gap: 130px;
+
+            @media screen and (max-width: 1024px) {
+                gap: 80px;
+                margin-bottom: 100px;
+            }
         }
 
         &:nth-of-type(2) {
             grid-template-columns: 2fr 1fr;
             margin-bottom: 114px;
+        }
+
+        @media screen and (max-width: 1024px) {
+            margin: 0 20px;
         }
     }
 
@@ -246,6 +331,10 @@ $tertiary-color: #8BC441;
         max-height: 601px;
         background-color: #F4F6F0;
         display: grid;
+
+        @media screen and (max-width: 1024px) {
+            max-height: 501px;
+        }
     }
 
     &_bg-green {
@@ -267,6 +356,21 @@ $tertiary-color: #8BC441;
         &_positioned {
             grid-template-columns: 1fr 2fr;
             gap: 167px;
+
+            @media screen and (max-width: 1024px) {
+                gap: 60px;
+            }
+        }
+
+        @media screen and (max-width: 1024px) {
+            margin: 0 20px 0 25px;
+        }
+    }
+
+    &__img {
+        &_big {
+            width: 380px;
+            height: auto;
         }
     }
 
